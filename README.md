@@ -2,6 +2,12 @@
 
 Academic/research portfolio, built with plain HTML and CSS and deployed with GitHub Pages.
 
+## Webpage
+
+Access my webpage here:
+
+https://codingreyes.github.io/
+
 ## Files
 - `index.html`: all page content and sections
 - `style.css`: theme, layout, responsive rules

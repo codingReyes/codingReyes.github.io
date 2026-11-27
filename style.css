@@ -1097,137 +1097,35 @@ footer {
   padding-top: 8px;
 }
 
-/* Latest work: year rail on the left, publications on the right */
+/* Latest work: simple blue-to-yellow colour rail beside the publication list */
 .latest-work-layout {
+  display: grid;
+  grid-template-columns: 3px minmax(0, 1fr);
+  gap: 26px;
   margin: 30px 0;
+  align-items: stretch;
+}
+
+.latest-work-rail {
+  border-radius: 999px;
+  background: linear-gradient(to bottom, #3478ff 0%, #58a6ff 34%, #a5c957 68%, #f3d54a 100%);
+  box-shadow: 0 0 14px rgba(80, 145, 255, 0.18);
 }
 
 .latest-work-list {
-  position: relative;
-  display: grid;
-  gap: 0;
-}
-
-.latest-work-list::before {
-  position: absolute;
-  top: 8px;
-  bottom: 8px;
-  left: 17px;
-  width: 2px;
-  background: linear-gradient(to bottom, #3478ff, #58a6ff, #a5c957, #f3d54a);
-  box-shadow: 0 0 12px rgba(80, 145, 255, 0.18);
-  content: "";
-}
-
-.work-year-group {
-  position: relative;
-  display: grid;
-  grid-template-columns: 150px minmax(0, 1fr);
-  gap: 24px;
-  margin-bottom: 26px;
-}
-
-.work-year-group:last-child {
-  margin-bottom: 0;
-}
-
-.work-year-marker {
-  display: flex;
-  align-items: flex-start;
-  gap: 13px;
-  padding-top: 8px;
-}
-
-.timeline-dot {
-  position: relative;
-  z-index: 1;
-  width: 13px;
-  height: 13px;
-  flex: 0 0 13px;
-  margin-left: 12px;
-  border: 2px solid #3478ff;
-  border-radius: 50%;
-  background: var(--bg);
-  box-shadow: 0 0 12px rgba(52, 120, 255, 0.45);
-}
-
-.work-year-group:nth-child(2) .timeline-dot {
-  border-color: #a5c957;
-  box-shadow: 0 0 12px rgba(165, 201, 87, 0.35);
-}
-
-.work-year-group:nth-child(3) .timeline-dot {
-  border-color: #f3d54a;
-  box-shadow: 0 0 12px rgba(243, 213, 74, 0.35);
-}
-
-.timeline-year-label {
-  color: #a8c8ff;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-.work-year-group:nth-child(2) .timeline-year-label {
-  color: #c3d783;
-}
-
-.work-year-group:nth-child(3) .timeline-year-label {
-  color: #f3d54a;
-}
-
-.work-year-content {
   display: grid;
   gap: 18px;
   min-width: 0;
 }
 
-.work-year-content .paper {
+.latest-work-list .paper {
   margin: 0;
 }
 
-@media (max-width: 800px) {
-  .work-year-group {
-    grid-template-columns: 86px minmax(0, 1fr);
-    gap: 14px;
-  }
-
-  .work-year-marker {
-    gap: 8px;
-  }
-
-  .timeline-year-label {
-    font-size: 0.78rem;
-  }
-
-  .timeline-dot {
-    margin-left: 11px;
-  }
-
-  .latest-work-list::before {
-    left: 16px;
-  }
-}
-
 @media (max-width: 560px) {
-  .work-year-group {
-    grid-template-columns: 60px minmax(0, 1fr);
-    gap: 10px;
-  }
-
-  .latest-work-list::before {
-    left: 13px;
-  }
-
-  .timeline-dot {
-    margin-left: 8px;
-    width: 11px;
-    height: 11px;
-    flex-basis: 11px;
-  }
-
-  .timeline-year-label {
-    font-size: 0.72rem;
+  .latest-work-layout {
+    grid-template-columns: 2px minmax(0, 1fr);
+    gap: 14px;
   }
 }
 @media (max-width: 850px) {

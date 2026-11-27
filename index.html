@@ -25,7 +25,7 @@
   <header class="topbar">
     <a class="brand" href="#home"><span class="pulse"></span> GG<span class="brand-muted">/RESEARCH</span></a>
     <nav>
-      <a href="#about">ABOUT</a><a href="#research">RESEARCH</a><a href="#timeline">TIMELINE</a><a href="#papers">PUBLICATIONS</a><a href="#awards">AWARDS</a><a href="#otherworks">OTHER WORKS</a><a href="#contact">CONTACT</a>
+      <a href="#about">ABOUT</a><a href="#research">RESEARCH</a><a href="#papers">PUBLICATIONS</a><a href="#awards">AWARDS</a><a href="#otherworks">OTHER WORKS</a><a href="#contact">CONTACT</a>
     </nav>
     <span class="status"><i></i> OPEN TO COLLABORATION</span>
   </header>
@@ -94,38 +94,30 @@
       </div>
     </section>
 
-    <section class="section" id="timeline">
-      <div class="section-head"><span class="index">03</span><h2>Research <em>timeline</em></h2><span class="line"></span></div>
-      <p class="section-intro">A progression of experiments and research contributions, with cotton perception as the central thread and robotics perception as a broader technical direction.</p>
-      <div class="research-timeline">
-        <article class="timeline-entry"><span class="timeline-date">2024</span><div class="timeline-body"><h3>Ready-to-harvest cotton detection</h3><p>YOLOv8-based detection and classification in greenhouse crops; introduction of the RTH-CONDIS dataset and focus on harvest readiness.</p><span class="timeline-label">DATASET · DETECTION · HARVEST READINESS</span></div></article>
-        <article class="timeline-entry"><span class="timeline-date">2025</span><div class="timeline-body"><h3>Cotton growth-stage detection</h3><p>Investigating an improved YOLO11 approach for recognizing cotton structures and growth stages, culminating in a CCIA publication and Best Poster Prize.</p><span class="timeline-label">YOLO11 · GROWTH STAGES · AWARD</span></div></article>
-        <article class="timeline-entry"><span class="timeline-date">2026</span><div class="timeline-body"><h3>COTONET &amp; model refinement</h3><p>Custom YOLO11 cotton-detection research, exploring architecture and feature-processing modifications, attention mechanisms and evaluation on challenging instances.</p><span class="timeline-label">CUSTOM MODEL · EXPERIMENTS · PREPRINT</span></div></article>
-        <article class="timeline-entry"><span class="timeline-date">ONGOING</span><div class="timeline-body"><h3>Leaf-level perception &amp; plant health</h3><p>Extending cotton perception toward leaf segmentation and pest/disease analysis, combining visual instance separation with classification for complex scenes.</p><span class="timeline-label">SEGMENTATION · CLASSIFICATION · PLANT HEALTH</span></div></article>
-      </div>
-    </section>
-
     <section class="section" id="papers">
-      <div class="section-head"><span class="index">04</span><h2>Latest <em>work</em></h2><span class="line"></span></div>
-      <p class="section-intro">Selected scholarly work. Each entry includes a short summary and links to the paper or repository. Add any additional indexed publications after checking your Google Scholar profile.</p>
-      <div class="paper-list">
-        <article class="paper card"><div class="paper-year">2026 <span>CONFERENCE</span></div><div class="paper-content"><h3>Cotton Leaf Segmentation and Multi-Label Classification for Pest Control in Complex Environments</h3><p class="authors"><strong>Guillem González</strong>, Guillem Alenyà, Sergi Foix</p><p>Combines zero-shot leaf instance segmentation with multi-label classification to identify pests, diseases and abiotic stress on individual cotton leaves. The evaluated classifier achieves 0.959 mAP and 0.923 macro F1 across five-fold validation.</p><p class="publication-meta">Artificial Intelligence Research and Development · 2026 · pp. 369–378</p><div class="paper-links"><a href="https://doi.org/10.3233/FAIA261060">DOI ↗</a></a></div></div></article>
-        <article class="paper card"><div class="paper-year">2026 <span>PREPRINT</span></div><div class="paper-content"><h3>COTONET: A custom cotton detection algorithm based on YOLO11 for stage of growth cotton boll detection</h3><p class="authors"><strong>Guillem González</strong>, Guillem Alenyà, Sergi Foix</p><p>Custom YOLO11-based cotton detection architecture designed for difficult growth-stage instances. Explores attention and feature-processing modifications for greenhouse cotton perception, with a compact model footprint.</p><div class="paper-links"><a href="https://arxiv.org/abs/2603.11717">arXiv ↗</a></div></div></article>
-        <article class="paper card"><div class="paper-year">2025/26 <span>CONFERENCE</span></div><div class="paper-content"><h3>An improved YOLO11 model for accurate cotton growth-stage detection</h3><p class="authors"><strong>Guillem González</strong>, Sergi Foix, Guillem Alenyà</p><p>Investigates a tailored YOLO11 model for detection and classification of cotton structures and growth stages. Published in the proceedings of the 27th Catalan Conference on Artificial Intelligence (CCIA), IOS Press.</p><div class="paper-links"><a href="https://doi.org/10.3233/FAIA250601">DOI ↗</a><a href="https://upcommons.upc.edu/entities/publication/ab778cfa-95d2-4d35-843e-6111dc704fe1">UPCommons ↗</a><a href="https://www.iri.upc.edu/publications/show/3036">IRI record ↗</a></div></div></article>
-        <article class="paper card"><div class="paper-year">2024 <span>CONFERENCE</span></div><div class="paper-content"><h3>Fast ready-to-harvest cotton detection and classification with YOLOv8 in greenhouse crops</h3><p class="authors"><strong>Guillem González</strong>, Antonio Martínez, Vicente Martínez, Sergi Foix, Guillem Alenyà</p><p>Introduces the RTH-CONDIS dataset and evaluates YOLOv8 for detecting cotton bolls and distinguishing harvest readiness in greenhouse crops, targeting efficient robotic harvesting.</p><div class="paper-links"><a href="https://doi.org/10.1109/ROBOT61475.2024.10796900">DOI ↗</a><a href="https://www.iri.upc.edu/publications/show/2927">IRI record ↗</a></div></div></article>
+      <div class="section-head"><span class="index">03</span><h2>Latest <em>work</em></h2><span class="line"></span></div>
+      <p class="section-intro">Selected scholarly work, arranged newest first.</p>
+      <div class="latest-work-layout">
+        <div class="latest-work-rail" aria-hidden="true"></div>
+        <div class="latest-work-list">
+          <article class="paper card"><div class="paper-year">2026 <span>CONFERENCE</span></div><div class="paper-content"><h3>Cotton Leaf Segmentation and Multi-Label Classification for Pest Control in Complex Environments</h3><p class="authors"><strong>Guillem González</strong>, Guillem Alenyà, Sergi Foix</p><p>Combines zero-shot leaf instance segmentation with multi-label classification to identify pests, diseases and abiotic stress on individual cotton leaves. The evaluated classifier achieves 0.959 mAP and 0.923 macro F1 across five-fold validation.</p><p class="publication-meta">Artificial Intelligence Research and Development · 2026 · pp. 369–378</p><div class="paper-links"><a href="https://doi.org/10.3233/FAIA261060">DOI ↗</a></div></div></article>
+          <article class="paper card"><div class="paper-year">2026 <span>PREPRINT</span></div><div class="paper-content"><h3>COTONET: A custom cotton detection algorithm based on YOLO11 for stage of growth cotton boll detection</h3><p class="authors"><strong>Guillem González</strong>, Guillem Alenyà, Sergi Foix</p><p>Custom YOLO11-based cotton detection architecture designed for difficult growth-stage instances. Explores attention and feature-processing modifications for greenhouse cotton perception, with a compact model footprint.</p><div class="paper-links"><a href="https://arxiv.org/abs/2603.11717">arXiv ↗</a></div></div></article>
+          <article class="paper card"><div class="paper-year">2025/26 <span>CONFERENCE</span></div><div class="paper-content"><h3>An improved YOLO11 model for accurate cotton growth-stage detection</h3><p class="authors"><strong>Guillem González</strong>, Sergi Foix, Guillem Alenyà</p><p>Investigates a tailored YOLO11 model for detection and classification of cotton structures and growth stages. Published in the proceedings of the 27th Catalan Conference on Artificial Intelligence (CCIA), IOS Press.</p><div class="paper-links"><a href="https://doi.org/10.3233/FAIA250601">DOI ↗</a><a href="https://upcommons.upc.edu/entities/publication/ab778cfa-95d2-4d35-843e-6111dc704fe1">UPCommons ↗</a><a href="https://www.iri.upc.edu/publications/show/3036">IRI record ↗</a></div></div></article>
+          <article class="paper card"><div class="paper-year">2024 <span>CONFERENCE</span></div><div class="paper-content"><h3>Fast ready-to-harvest cotton detection and classification with YOLOv8 in greenhouse crops</h3><p class="authors"><strong>Guillem González</strong>, Antonio Martínez, Vicente Martínez, Sergi Foix, Guillem Alenyà</p><p>Introduces the RTH-CONDIS dataset and evaluates YOLOv8 for detecting cotton bolls and distinguishing harvest readiness in greenhouse crops, targeting efficient robotic harvesting.</p><div class="paper-links"><a href="https://doi.org/10.1109/ROBOT61475.2024.10796900">DOI ↗</a><a href="https://www.iri.upc.edu/publications/show/2927">IRI record ↗</a></div></div></article>
+        </div>
       </div>
       <div class="center"><a class="button" href="https://scholar.google.es/citations?user=kH_fAkcAAAAJ&amp;hl=ca">View full Google Scholar profile ↗</a></div>
     </section>
 
     <section class="section" id="awards">
-      <div class="section-head"><span class="index">05</span><h2>Awards &amp; <em>Recognition</em></h2><span class="line"></span></div>
+      <div class="section-head"><span class="index">04</span><h2>Awards &amp; <em>Recognition</em></h2><span class="line"></span></div>
       <div class="paper-list">
         <article class="paper card"><div class="paper-year">2025 <span>BEST POSTER</span></div><div class="paper-content"><h3>Best Poster Prize — CCIA 2025</h3><p class="authors"><strong>An improved YOLO11 model for accurate cotton growth-stage detection</strong></p><p>Recognized with the Best Poster Prize at the 27th Catalan Conference on Artificial Intelligence (CCIA 2025) for work on cotton growth-stage detection in greenhouse environments.</p><div class="paper-links"><a href="https://doi.org/10.3233/FAIA250601">Paper / DOI ↗</a></div></div></article>
       </div>
     </section>
 
     <section class="section" id="otherworks">
-      <div class="section-head"><span class="index">06</span><h2>Other <em>Works</em></h2><span class="line"></span></div>
+      <div class="section-head"><span class="index">05</span><h2>Other <em>Works</em></h2><span class="line"></span></div>
       <p class="section-intro">Academic and technical work beyond the research publications listed above.</p>
       <div class="paper-list">
         <article class="paper card"><div class="paper-year">2024 <span>BACHELOR'S THESIS</span></div><div class="paper-content"><h3>Bachelor's Thesis - Un estudi experimental de grafs geomètrics aleatoris multicapa</h3><p class="authors"><strong>Guillem González Valdivia</strong> · Universitat Politècnica de Catalunya</p><p>Estudi experimental sobre les propietats i l'evolució dels grafs geomètrics aleatoris multicapa. Una investigació que analitza com l'augment de capes influeix en el model per connectar-lo amb la dinàmica real de les xarxes socials.</p><div class="paper-links"><a href="https://upcommons.upc.edu/entities/publication/d49be674-2b82-4f77-aab9-049b997032ac">UPC Commons ↗</a></div></div></article>
@@ -133,7 +125,7 @@
     </section>
 
     <section class="section contact-section" id="contact">
-      <div class="section-head"><span class="index">07</span><h2>Contact &amp; <em>links</em></h2><span class="line"></span></div>
+      <div class="section-head"><span class="index">06</span><h2>Contact &amp; <em>links</em></h2><span class="line"></span></div>
       <div class="contact-grid">
         <div class="card contact-card"><p class="eyebrow">EMAIL</p><a href="mailto:guillemgonzalezvaldivia@gmail.com">guillemgonzalezvaldivia@gmail.com</a><a href="mailto:ggonzalez@iri.upc.edu">ggonzalez@iri.upc.edu</a><div class="divider"></div><p class="eyebrow">OFFICE / LAB</p><strong>Institut de Robòtica i Informàtica Industrial (IRI), CSIC–UPC</strong><p>Second floor · Perception and Manipulation Laboratory<br>C/ Llorens i Artigas 7–9<br>08028 Barcelona, Spain</p></div>
         <div class="card link-card"><p class="eyebrow">ELSEWHERE ON THE WEB</p><a href="https://github.com/codingReyes">GitHub <span>↗</span></a><a href="https://scholar.google.es/citations?user=kH_fAkcAAAAJ&amp;hl=ca">Google Scholar <span>↗</span></a><a href="https://www.linkedin.com/in/guillem-gonzalez-valdivia-b42761176/">LinkedIn <span>↗</span></a><a href="https://orcid.org/0009-0009-7627-0887">ORCID <span>↗</span></a></div>
